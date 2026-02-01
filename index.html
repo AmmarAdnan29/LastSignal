@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>LAST SIGNAL</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Modern Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --blood:#8b0000;
+  --blood-glow:#ff1a1a;
+  --text:#eaeaea;
+  --muted:#9a9a9a;
+}
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html, body{
+  width:100%;
+  height:100%;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--text);
+
+  /* FULL BACKGROUND IMAGE */
+  background:
+    linear-gradient(to bottom,
+      rgba(0,0,0,.85),
+      rgba(0,0,0,.95)
+    ),
+    url("LAST_SIGNAL_FULL_BANNER_-_Canva.png");
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px;
+}
+
+.hero h1{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:clamp(3rem,7vw,6rem);
+  letter-spacing:6px;
+}
+
+.hero h1 span{
+  color:var(--blood);
+  text-shadow:0 0 25px rgba(255,26,26,.6);
+}
+
+.hero p{
+  margin-top:20px;
+  max-width:700px;
+  color:var(--muted);
+  line-height:1.7;
+  font-size:1rem;
+}
+
+/* JOIN SIGNAL BUTTON (ANCHOR) */
+.join-btn{
+  margin-top:45px;
+  padding:18px 65px;
+  border:1px solid var(--blood);
+  background:transparent;
+  color:var(--blood-glow);
+  font-size:1rem;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:.35s;
+
+  /* anchor fixes */
+  text-decoration:none;
+  display:inline-block;
+}
+
+.join-btn:hover{
+  background:var(--blood);
+  color:black;
+  box-shadow:0 0 30px rgba(255,26,26,.6);
+}
+
+/* SECTION */
+section{
+  padding:90px 10%;
+  background:rgba(0,0,0,.85);
+  border-top:1px solid #111;
+}
+
+h2{
+  font-family:'Space Grotesk',sans-serif;
+  font-size:2rem;
+  letter-spacing:2px;
+  margin-bottom:25px;
+  color:var(--blood);
+}
+
+section p{
+  max-width:800px;
+  color:var(--muted);
+  line-height:1.8;
+}
+
+/* FEATURES */
+.features{
+  margin-top:40px;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:30px;
+}
+
+.feature{
+  background:#090909;
+  padding:30px;
+  border:1px solid #111;
+  transition:.3s;
+}
+
+.feature:hover{
+  border-color:var(--blood);
+  transform:translateY(-6px);
+}
+
+.feature h3{
+  font-family:'Space Grotesk',sans-serif;
+  margin-bottom:12px;
+  letter-spacing:1px;
+}
+
+/* FOOTER */
+footer{
+  padding:40px;
+  text-align:center;
+  font-size:.75rem;
+  color:#666;
+  background:#000;
+  letter-spacing:1px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div>
+    <h1>LAST <span>SIGNAL</span></h1>
+    <p>
+      When the world went silent, one transmission survived.  
+      Carry it. Protect it. Or die trying.
+    </p>
+
+    <!-- WORKING JOIN BUTTON -->
+    <a class="join-btn"
+       href="https://www.roblox.com/games/89270414583648/LAST-SIGNAL"
+       target="_blank">
+      JOIN THE SIGNAL
+    </a>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+  <h2>CLASSIFIED BROADCAST</h2>
+  <p>
+    <strong>Last Signal</strong> is a dark Roblox survival experience set in a collapsed world.
+    Communication is dead. Cities are hollow. One signal remains — and whoever holds it
+    decides who survives.
+  </p>
+</section>
+
+<!-- FEATURES -->
+<section>
+  <h2>SYSTEMS ONLINE</h2>
+  <div class="features">
+    <div class="feature">
+      <h3>📡 Signal Carrier</h3>
+      <p>Only one player can carry the signal. It reveals hope — and attracts danger.</p>
+    </div>
+    <div class="feature">
+      <h3>🩸 Brutal Survival</h3>
+      <p>Scarcity, fear, and pressure. No safe zones.</p>
+    </div>
+    <div class="feature">
+      <h3>🌑 Dead World</h3>
+      <p>Explore abandoned cities and forgotten infrastructure.</p>
+    </div>
+    <div class="feature">
+      <h3>🎮 Multi-Platform</h3>
+      <p>Optimized for PC, Mobile, Tablet & Console.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  LAST SIGNAL © 2026 — THE SIGNAL IS WEAK
+</footer>
+
+</body>
+</html>
